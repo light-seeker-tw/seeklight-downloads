@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>尋光者 · 資源下載</title>
+<meta name="description" content="尋光者的自我照顧資源，免費下載。">
+<meta property="og:title" content="尋光者 · 資源下載">
+<meta property="og:description" content="陪你慢慢好起來。">
+<style>
+  :root{ --gold:#9c7638; --ink:#242424; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:-apple-system,"PingFang TC","Noto Sans TC",sans-serif;
+    color:var(--ink); line-height:1.8;
+    background:linear-gradient(160deg,#cdeaf3 0%,#f7eae8 50%,#f9f3d1 100%);
+    background-attachment:fixed;
+    min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px;
+  }
+  .wrap{ width:100%; max-width:560px; }
+  .card{
+    background:rgba(255,255,255,.72); backdrop-filter:blur(24px);
+    border-radius:28px; padding:44px 34px 38px;
+    box-shadow:0 18px 60px rgba(90,75,60,.14);
+  }
+  .brand{ letter-spacing:.3em; font-size:13px; color:#6b645c; text-align:center }
+  .rule{ height:2px; background:var(--gold); opacity:.5; margin:18px 0 30px }
+  h1{ font-size:26px; line-height:1.5; letter-spacing:.02em; margin-bottom:14px }
+  h1 b{ color:var(--gold) }
+  p{ font-size:16px; color:#4a4a4a; margin-bottom:26px }
+  .item{
+    display:flex; align-items:center; gap:16px;
+    border:1.5px solid rgba(156,118,56,.35); border-radius:18px;
+    padding:18px 20px; margin-bottom:14px; text-decoration:none; color:inherit;
+    background:rgba(255,255,255,.55); transition:.18s;
+  }
+  .item:hover{ border-color:var(--gold); transform:translateY(-2px); background:rgba(255,255,255,.8) }
+  .item .txt{ flex:1 }
+  .item .name{ font-size:17px; font-weight:700 }
+  .item .meta{ font-size:13px; color:#7a736b; margin-top:2px }
+  .item .go{ color:var(--gold); font-size:14px; letter-spacing:.08em; white-space:nowrap }
+  .foot{ text-align:center; margin-top:30px; font-size:14px }
+  .foot a{ color:var(--gold); text-decoration:none; letter-spacing:.05em }
+  @media (prefers-color-scheme:dark){
+    body{ background:linear-gradient(160deg,#22303a 0%,#33282a 50%,#332f22 100%) }
+    .card{ background:rgba(28,28,30,.72) }
+    body,.item{ color:#ece7e0 }
+    .item{ background:rgba(255,255,255,.06) }
+    .item:hover{ background:rgba(255,255,255,.12) }
+    p{ color:#c8c2ba } .brand,.item .meta{ color:#9a938b }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="brand">尋 光 者 · 陪 你 慢 慢 好 起 來</div>
+    <div class="rule"></div>
+
+    <h1>你要的東西，<b>在這裡</b>。</h1>
+    <p>免費下載，不用留 email。點一下就開始。</p>
+
+    <a class="item" href="files/7天內耗自救清單.pdf" download>
+      <div class="txt">
+        <div class="name">7 天內耗自救清單</div>
+        <div class="meta">PDF · 9 頁 · 2.7 MB</div>
+      </div>
+      <div class="go">下載 →</div>
+    </a>
+
+    <div class="foot">
+      <a href="https://www.instagram.com/light_seeker2023/" target="_blank" rel="noopener">
+        追蹤 @light_seeker2023
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
