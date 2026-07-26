@@ -6,12 +6,14 @@ IG 私訊關鍵字回覆用的免費資源下載頁（GitHub Pages 靜態站）�
 
 `https://<ORG名稱>.github.io/seeklight-downloads/`
 
-PDF 直連：`https://<ORG名稱>.github.io/seeklight-downloads/files/7天內耗自救清單.pdf`
+PDF 直連：`https://<ORG名稱>.github.io/seeklight-downloads/files/seeklight-7day-checklist.pdf`
 
 ## 加新檔案
 
 1. 把 PDF 放進 `files/`
 2. 編輯 `index.html`，複製一組 `.item` 區塊改檔名／頁數／大小
+   （⚠️ 檔名一律用**英文**，中文檔名在網址會變 %E5%… 亂碼、貼進 IG 私訊容易斷；
+    用 `download="中文名.pdf"` 屬性讓使用者存下來仍是中文檔名）
 3. `git add -A && git commit -m "add: 檔名" && git push`
 
 ⚠️ **已發佈的檔名不要改**——自動回覆和舊貼文都指著它。改版就覆蓋同一個檔名。
